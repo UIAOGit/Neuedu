@@ -19,10 +19,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        findById();
-        
+        setView();
+
     }
-    public void findById()
+    public void setView()
     {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
