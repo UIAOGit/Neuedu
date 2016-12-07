@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="密码"
+        android:inputType="textPassword"
         android:id="@+id/password"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,18 +31,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="请输入下方图片的红色文字"
             android:textColor="#ff0000"/>
     </LinearLayout>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/captcha_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/captcha_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击刷新"
+            android:id="@+id/refresh"/>
+    </LinearLayout>
+
 
     <CheckBox
-        android:text="CheckBox"
+        android:text="自动登录"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/checkBox" />
-
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="登录"
+    android:id="@+id/login"/>
 </LinearLayout>
